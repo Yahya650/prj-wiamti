@@ -1,105 +1,103 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const _footer = () => {
   return (
-    <footer className="default-padding bg-light">
+    <footer className="default-padding bg-light mb-0 pb-4">
       <div className="container">
         <div className="f-items">
           <div className="row">
             <div className="col-lg-3 col-md-6 item">
               <div className="f-item">
-                <img src="/assets/img/logo.png" alt="Logo" />
+                <img
+                  src="/assets/img/Untitled design (2) (1) (1).png"
+                  alt="Logo"
+                />
                 <p>
-                  Excellence decisively nay man yet impression for contrasted
-                  remarkably. There spoke happy for you are out. Fertile how old
-                  address did showing because sitting replied six. Had arose
-                  guest visit going off child she new.
+                  société implanté sur Casablanca, et spécialisée dans Nouvelle
+                  technologie. Nous sommes leader du marché dans le domaine de
+                  la domatique et nous proposons les meilleures solutions à nos
+                  clients.
                 </p>
-                <a href="#" className="btn circle btn-theme effect btn-sm">
-                  Get Started
-                </a>
+                <Link
+                  className="btn circle btn-theme effect btn-sm"
+                  to="/our-services"
+                >
+                  Commencer
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 item">
               <div className="f-item link">
-                <h4>Quick LInk</h4>
+                <h4>Quick Link</h4>
                 <ul>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> Home
-                    </a>
+                    <Link className="smooth-menu" to="/home">
+                      Accueil
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> About us
-                    </a>
+                    <Link className="smooth-menu" to="/about-us">
+                      À Propos de Nous
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> Compnay History
-                    </a>
+                    <Link className="smooth-menu" to="/our-services">
+                      Nos Services
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> Features
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> Blog Page
-                    </a>
+                    <Link className="smooth-menu" to="/contact">
+                      Contact
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 item">
               <div className="f-item link">
-                <h4>Community</h4>
+                <h4>CE QUE NOUS FAISONS</h4>
                 <ul>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> Career
-                    </a>
+                    <Link to="#">Caméra De Surveillance</Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> Leadership
-                    </a>
+                    <Link to="#">Vidéophone</Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> Strategy
-                    </a>
+                    <Link to="#">Automatisme De Portes</Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> Services
-                    </a>
+                    <Link to="#">Précablage Informatique</Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fas fa-angle-right" /> History
-                    </a>
+                    <Link to="#">
+                      Sytéme Anti-Incendie / Intrusion Découvrez
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 item">
               <div className="f-item twitter-widget">
-                <h4>Contact Info</h4>
+                <h4>Infos de Contact</h4>
                 <p>
-                  Estimating stimulated how reasonably precaution diminution she
-                  simplicity
+                  {/* société implanté sur Casablanca, et spécialisée dans Nouvelle
+                  technologie. Nous sommes leader du marché dans le domaine de
+                  la domatique et nous proposons les meilleures solutions à nos
+                  clients. */}
                 </p>
                 <div className="address">
                   <ul>
-                    <li>
+                    <li className="d-flex align-items-center">
                       <div className="icon">
                         <i className="fas fa-home" />
                       </div>
                       <div className="info">
-                        <h5>Website:</h5>
-                        <span>www.validtheme.com</span>
+                        <h5>Address:</h5>
+                        <span>
+                          hay raja 2 rue 3, Casablanca, Morocco, 25000
+                        </span>
                       </div>
                     </li>
                     <li>
@@ -108,7 +106,9 @@ const _footer = () => {
                       </div>
                       <div className="info">
                         <h5>Email:</h5>
-                        <span>support@validtheme.com</span>
+                        <a href="mailto:bti.technologie@gmail.com">
+                          <span>bti.technologie@gmail.com</span>
+                        </a>
                       </div>
                     </li>
                     <li>
@@ -117,7 +117,9 @@ const _footer = () => {
                       </div>
                       <div className="info">
                         <h5>Phone:</h5>
-                        <span>+44-20-7328-4499</span>
+                        <a href="tel:+212666364567">
+                          <span>+212 666 364567</span>
+                        </a>
                       </div>
                     </li>
                   </ul>
@@ -128,28 +130,16 @@ const _footer = () => {
         </div>
         {/* Start Footer Bottom */}
         <div className="footer-bottom">
-          <div className="col-lg-12">
-            <div className="row">
-              <div className="col-lg-6">
-                <p>
-                  © Copyright 2018. All Rights Reserved by{" "}
-                  <a href="#">validthemes</a>
-                </p>
-              </div>
-              <div className="col-lg-6 text-right link">
-                <ul>
-                  <li>
-                    <a href="#">Terms of user</a>
-                  </li>
-                  <li>
-                    <a href="#">License</a>
-                  </li>
-                  <li>
-                    <a href="#">Support</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div className="col-lg-12 text text-center">
+            <p>
+              © Copyright {new Date().getFullYear()}. All Rights Reserved by{" "}
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCExZrxka4cs-e2yKMzsC-dg"
+              >
+                skaydi
+              </a>
+            </p>
           </div>
         </div>
       </div>
